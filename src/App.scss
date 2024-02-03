@@ -1,0 +1,25 @@
+//size
+$size:820px;
+$sample:500px;
+.main{
+  background-size: cover;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 1000px;
+  width: 1270px;
+
+  @media screen and (max-width: $sample){
+      .contentContainer{
+        gap: 20px;
+      }
+  }
+  
+}
+
+@media screen and (max-width: $size) {
+  .main{
+    
+    height: 2990px;
+  }
+}
+

@@ -1,0 +1,24 @@
+.login {
+    background-color: rgb(91, 0, 0);
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 1370px;
+    
+
+    h2 {
+        display: flex;
+        align-items: center;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        align-content: center;
+        text-align: center;
+        color: rgb(63, 162, 224);
+    }
+
+    Button{
+        margin-left: 125px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,66 @@
+.revenuebox{
+    display: flex;
+    height: 100%;
+
+
+    .boxInfo{
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        .title{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            img{
+                width: 20px;
+                background-color: rgb(24, 20, 23);
+                
+            }
+            
+            span{
+                font-size: small;
+            }
+        }
+
+        h1{
+            font-size: 25px;
+        }
+
+        a:Link {
+            font-size: 13px;
+            
+        }
+        
+    }
+
+    .chartInfo{
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+        .chart{
+            height: 100%;
+            width: 100%;
+        }
+
+        .texts{
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+    
+            .percentage{
+                font-size: 18px;
+            }
+
+            .duration{
+                font-size: small;
+            }
+        }
+    }    
+}    
