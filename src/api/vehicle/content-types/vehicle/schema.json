@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vehicles",
+  "info": {
+    "singularName": "vehicle",
+    "pluralName": "vehicles",
+    "displayName": "Vehicle",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "vin": {
+      "type": "biginteger"
+    },
+    "type": {
+      "type": "text"
+    },
+    "price": {
+      "type": "richtext"
+    },
+    "description": {
+      "type": "text"
+    },
+    "customers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::customer.customer",
+      "inversedBy": "vehicles"
+    },
+    "sub_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::sub-category.sub-category",
+      "inversedBy": "vehicles"
+    }
+  }
+}

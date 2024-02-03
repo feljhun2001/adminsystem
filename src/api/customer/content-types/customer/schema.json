@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customers",
+  "info": {
+    "singularName": "customer",
+    "pluralName": "customers",
+    "displayName": "Customer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "text"
+    },
+    "age": {
+      "type": "biginteger"
+    },
+    "address": {
+      "type": "text"
+    },
+    "vin": {
+      "type": "biginteger"
+    },
+    "type_of_user": {
+      "type": "string"
+    },
+    "inventory": {
+      "type": "text"
+    },
+    "user_id": {
+      "type": "biginteger"
+    },
+    "car": {
+      "type": "string"
+    },
+    "vehicles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::vehicle.vehicle",
+      "mappedBy": "customers"
+    },
+    "sub_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::sub-category.sub-category",
+      "mappedBy": "customers"
+    }
+  }
+}

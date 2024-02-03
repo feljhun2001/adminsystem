@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sub_categories",
+  "info": {
+    "singularName": "sub-category",
+    "pluralName": "sub-categories",
+    "displayName": "SubCategory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "vehicles": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::vehicle.vehicle",
+      "mappedBy": "sub_categories"
+    },
+    "customers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::customer.customer",
+      "inversedBy": "sub_categories"
+    }
+  }
+}
